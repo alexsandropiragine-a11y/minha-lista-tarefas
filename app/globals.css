@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.formulario {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.formulario input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.formulario button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #2980b9;
+}
+
+.controles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contador {
+  font-size: 14px;
+  color: #7f8c8d;
+  font-weight: bold;
+}
+
+.filtros button {
+  background: transparent;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filtros button.ativo {
+  background: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.lista {
+  list-style: none;
+}
+
+.mensagem-vazia {
+  text-align: center;
+  color: #999;
+  margin-top: 20px;
+}
+
+.lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.lista li:last-child {
+  border-bottom: none;
+}
+
+.tarefa-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-concluido span {
+  text-decoration: line-through;
+  color: #bdc3c7;
+}
+
+.btn-excluir {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btn-excluir:hover {
+  background: #c0392b;
+}
